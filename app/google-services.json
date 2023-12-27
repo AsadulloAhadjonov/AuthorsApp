@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "666264531473",
+    "project_id": "authorsapp-96605",
+    "storage_bucket": "authorsapp-96605.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666264531473:android:d86bb2a22785f49b18f7b0",
+        "android_client_info": {
+          "package_name": "com.asadullo.authorsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuzo1PmZE6CmjMCbvc0WoCVWVVqkFkFjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

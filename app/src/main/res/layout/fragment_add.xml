@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:gravity="center"
+    tools:context=".ui.AddFragment.AddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:text="Sozlamalar"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_author"
+                android:layout_width="@dimen/_155sdp"
+                android:layout_height="@dimen/_118sdp"
+                android:background="#C4C4C4"
+                android:scaleType="centerCrop"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_img"
+                android:text="Adib rasmi"
+                app:cornerRadius="@dimen/_7sdp"
+                android:backgroundTint="#00B238"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_width="@dimen/_155sdp"
+                android:layout_height="@dimen/_30sdp"/>
+
+            <EditText
+                android:id="@+id/author_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_37sdp"
+                android:background="#c4c4c4"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:hint="Adib ismi, familiyasi va otasining ismi"
+                android:padding="@dimen/_10sdp"
+                />
+
+            <EditText
+                android:id="@+id/author_year_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_37sdp"
+                android:background="#c4c4c4"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:hint="Tug’ilgan yili"
+                android:padding="@dimen/_10sdp"
+                />
+
+            <EditText
+                android:id="@+id/author_year_of_death"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_37sdp"
+                android:background="#c4c4c4"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:hint="Vafot etgan yili"
+                android:padding="@dimen/_10sdp"
+                />
+
+            <Spinner
+                android:id="@+id/type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="#c4c4c4"
+                />
+
+            <EditText
+                android:id="@+id/author_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:background="#c4c4c4"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:hint="Adib haqida to’liq ma’lumot"
+                android:padding="@dimen/_10sdp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save"
+                android:text="Saqlash"
+                android:layout_gravity="end"
+                app:cornerRadius="@dimen/_7sdp"
+                android:backgroundTint="#00B238"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="@dimen/_155sdp"
+                android:layout_height="@dimen/_35sdp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
