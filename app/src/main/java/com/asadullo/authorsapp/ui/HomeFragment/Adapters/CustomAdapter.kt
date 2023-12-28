@@ -5,9 +5,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 
-class CustomAdapter(fragment: FragmentManager, private val list: List<String>) : FragmentPagerAdapter(fragment) {
+class CustomAdapter(fragment: FragmentManager) : FragmentPagerAdapter(fragment) {
     override fun getCount(): Int {
-        return list.size
+        return 3
     }
 
     override fun getItem(position: Int): Fragment {

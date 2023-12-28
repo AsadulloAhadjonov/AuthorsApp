@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bac"
-    app:layoutDescription="@xml/fragment_home_scene3"
+    app:layoutDescription="@xml/fragment_home_scene4"
     tools:context=".ui.HomeFragment.HomeFragment">
+
     <LinearLayout
         android:id="@+id/ll1"
         android:layout_width="match_parent"
@@ -42,19 +43,20 @@
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
-    <FrameLayout
+
+    <LinearLayout
         android:id="@+id/f1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ll1"
         android:padding="@dimen/_10sdp"
-        app:layout_constraintTop_toBottomOf="@id/ll1">
-
+        android:layout_height="wrap_content">
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_l"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bac_tab"
             app:tabIndicator="@drawable/bac_inci"
+            android:contentDescription="aa"
             app:tabIndicatorAnimationMode="elastic"
             app:tabIndicatorColor="@color/yashil"
             app:tabIndicatorFullWidth="true"
@@ -64,13 +66,13 @@
             app:tabMode="fixed"
             app:tabSelectedTextColor="#fff"
             app:tabTextColor="#BDBDBD" />
-    </FrameLayout>
+    </LinearLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/my_viewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:contentDescription="salom"
         android:paddingHorizontal="@dimen/_10sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/f1" />

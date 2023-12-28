@@ -41,7 +41,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_20sdp"
-            android:backgroundTint="#fff"
+            app:cardBackgroundColor="#fff"
+            android:id="@+id/save_btn"
             app:layout_constraintTop_toBottomOf="@id/img_item"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toRightOf="@id/author_name"
@@ -52,7 +53,7 @@
             <ImageView
                 android:layout_width="@dimen/_10sdp"
                 android:layout_height="@dimen/_20sdp"
-                android:src="@drawable/save"
+                android:src="@drawable/outline_bookmark_border_24"
                 android:layout_gravity="center"
                 />
 

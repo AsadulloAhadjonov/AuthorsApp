@@ -14,18 +14,13 @@ import com.asadullo.authorsapp.ui.HomeFragment.Adapters.CustomAdapter
 
 class HomeFragment : Fragment() {
     private val binding by lazy { FragmentHomeBinding.inflate(layoutInflater) }
+    private lateinit var customAdapter: CustomAdapter
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        var item = arrayListOf<String>(
-            "Mumtoz Adabiyoti",
-            "O'zbek Adabiyoti",
-            "Jahon Adabiyoti"
-        )
-
-        var customAdapter = CustomAdapter(childFragmentManager, item)
+        customAdapter = CustomAdapter(childFragmentManager)
         customAdapter.addFragment(FragmentCustom(), "Mumtoz Adabiyot")
         customAdapter.addFragment(FragmentCustom(), "O'zbek Adabiyot")
         customAdapter.addFragment(FragmentCustom(), "Jahon Adabiyot")
@@ -34,7 +29,9 @@ class HomeFragment : Fragment() {
         binding.tabL.setupWithViewPager(binding.myViewPager)
 
         binding.searchBtn.setOnClickListener {
-            findNavController().navigate(R.id.searchFragment)
+            var bundle = Bundle()
+            bundle.putInt("keySearch", 0)
+            findNavController().navigate(R.id.searchFragment, bundle)
         }
 
         return binding.root
